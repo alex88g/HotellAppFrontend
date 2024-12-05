@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel and Room Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hotel and Room Administration</h1>
+
+    <!-- Hotel List -->
+    <section>
+        <h2>Hotels</h2>
+        <ul class="hotel-list" id="hotelList">
+            <!-- Hotel items will be added here dynamically -->
+        </ul>
+        
+        <div class="add-hotel-form">
+            <h3>Add a New Hotel</h3>
+            <input type="text" id="hotelName" placeholder="Enter hotel name" />
+            <button onclick="addHotel()">Add Hotel</button>
+        </div>
+    </section>
+
+    <!-- Room List -->
+    <section>
+        <h2>Rooms</h2>
+        <ul class="room-list" id="roomList">
+            <!-- Room items will be added here dynamically -->
+        </ul>
+        
+        <div class="add-room-form">
+            <h3>Add a New Room</h3>
+            <input type="text" id="roomNameInput" placeholder="Enter room name" />
+            <button id="addRoomButton" onclick="addRoom()">Add Room</button>
+        </div>
+    </section>
+
+    <!-- Customer List -->
+    <section>
+        <h2>Customers</h2>
+        <ul class="customer-list" id="customerList">
+            <!-- Customer items will be added here dynamically -->
+        </ul>
+
+        <div class="add-room-form">
+            <h3>Add a New Customer</h3>
+            <input type="text" id="customerNameInput" placeholder="Enter customer name" />
+            <button id="addCustomerButton" onclick="addCustomer()">Add Customer</button>
+        </div>
+    </section>
+
+    <script src="room.js"></script>
+    <script src="hotell.js"></script>
+    <script src="customer.js"></script>
+
+</body>
+</html>
